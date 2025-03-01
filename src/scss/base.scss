@@ -1,0 +1,23 @@
+@use "./_variables" as *;
+
+.container{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 70px;
+
+    @media screen and (max-width:$ui-breakpoint-xl) {
+        max-width: 992px;
+    }
+
+    @media screen and (max-width:$ui-breakpoint-lg) {
+        max-width:768px;
+    }
+
+    @media screen and (max-width:$ui-breakpoint-md) {
+        max-width: 576px;
+    }
+
+    @media screen and (max-width:$ui-breakpoint-sm) {
+        max-width: 100%;
+    }
+}
