@@ -2,14 +2,23 @@
   "name": "gulp-overview",
   "version": "1.0.0",
   "description": "Gulp overview for build project",
+  "homepage": "https://github.com/bogrud/sp_2_advanced_html_and_css#readme",
+  "bugs": {
+    "url": "https://github.com/bogrud/sp_2_advanced_html_and_css/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bogrud/sp_2_advanced_html_and_css.git"
+  },
+  "license": "ISC",
+  "author": "dan.it education",
+  "type": "module",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "gulp dev",
     "build": "gulp build"
   },
-  "author": "dan.it education",
-  "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.29.3",
     "cssnano": "^6.0.1",
@@ -22,8 +31,9 @@
     "gulp-imagemin": "^8.0.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.69.4",
-    "gulp-gh-pages":"^0.5.4"
+    "gulp-gh-pages": "^0.5.4"
   },
-  "browserslist": ["last 3 version and not dead"],
-  "type": "module"
+  "browserslist": [
+    "last 3 version and not dead"
+  ]
 }
