@@ -1,9 +1,14 @@
 @use "./_variables" as *;
 
+* {
+    background-color: $ui-color-white;
+    font-family: 'Gilroy', sans-serif;
+}
+
 .container{
-    max-width: 1920px;
+    max-width: 120rem;
     margin: 0 auto;
-    padding: 0 70px;
+    padding: 0 4.375rem;
 
     @media screen and (max-width:$ui-breakpoint-xl) {
         max-width: 992px;

@@ -6,16 +6,113 @@
 @forward './base.scss';
 @use "./_variables" as *;
 
-.section__my-clients {
-    padding: 50px 0 130px;
+.my-clients {
+    padding: 3.125rem 0 8.125rem;
 
-    .section__my-clients-title {
+    .my-clients__title {
         font-family: 'Gilroy', sans-serif;
         text-transform: uppercase;
         font-weight: 300;
-        font-size: 212px;
+        font-size: 13.25rem;
         color: $ui-color-black;
         text-align: center;
+        margin-bottom: 3.125rem;
+    }
+
+    .my-clients__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        .my-clients__card {
+            padding: 1.875rem 1.875rem 3.7156rem 1.875rem;
+
+            .my-clients__icon {
+                margin-bottom: 1.875rem;
+            }
+
+            .my-clients__lable {
+                font-size: 2.5rem;
+                font-weight: 800;
+                line-height: 2.75rem;
+                margin-bottom: 1.875rem;
+                color: #333333;
+            }
+
+            .my-clients__descr {
+                font-family: 'Inter', sans-serif;
+                font-size: 1.25rem;
+                font-weight: 400;
+                line-height: 1.875rem;
+                margin-bottom: 1.875rem;
+                color: #000000;
+            }
+
+            .my-clients__box {
+                display: flex;
+                align-items: center;
+
+                .my-clients__photo {
+                    width: 4.375rem;
+                    height: 4.375rem;
+                    background-size: cover;
+                    border-radius: 50%;
+                    margin-right: .625rem;
+                }
+                
+                .my-clients__photo--1 {
+                    background-image: url('../images/client-1.jpg');
+                }
+
+                .my-clients__photo--2 {
+                    background-image: url('../images/client-2.jpg');
+                }
+
+                .my-clients__photo--3 {
+                    background-image: url('../images/client-3.jpg');
+                }
+
+                .my-clients__photo--4 {
+                    background-image: url('../images/client-4.jpg');
+                }
+
+                .my-clients__photo--5 {
+                    background-image: url('../images/client-5.jpg');
+                }
+                
+                .my-clients__photo--6 {
+                    background-image: url('../images/client-6.jpg');
+                }
+
+
+                .my-clients__user {
+                    display: flex;
+                    flex-direction: column;
+
+                    .my-clients__name {
+                        font-family: 'Inter', sans-serif;
+                        font-weight: 600;
+                        font-size: 1.25rem;
+                        line-height: 1.25rem;
+                        margin-bottom: .625rem;
+                    }
+
+                    .my-clients__profession {
+                        font-weight: 400;
+                        font-size: 1.25rem;
+                        line-height: 1.25rem;
+                    }
+                }
+            }
+        }
+
+        .my-clients__card--border-bottom {
+            border-bottom: .0625rem solid #000000;
+        }
+        
+        .my-clients__card--border-right {
+            border-right: .0625rem solid #000000;
+        }
+        
     }
 }
 
