@@ -1,0 +1,108 @@
+@use './variables' as *;
+@use './fonts.scss' as *;
+main {
+    .section__three {  
+        background-color: #F5F3EA;
+        border-top: 1px solid #252525;
+        border-bottom: 1px solid #252525;
+        padding: 70px 30px 100px;
+        @media screen and (max-width:$ui-breakpoint-xl) {
+            padding: 30px 30px;
+        }
+        @media screen and (max-width:$ui-breakpoint-md) {
+            padding: 30px 20px;
+        }
+        .three__conteiner {
+            margin: 0 auto;
+
+            .conteiner__title{
+                font-family: 'Gilroy';
+                font-weight: 300;
+                font-size: 180px;
+                letter-spacing: 4%;
+                text-transform: uppercase;
+                color: #252525;
+                text-align: center;
+                @media screen and (max-width:$ui-breakpoint-xl) {
+                    font-size: 120px;
+                }
+                @media screen and (max-width:$ui-breakpoint-md) {
+                    font-size: 60px;
+                }
+            }
+            .conteiner__box {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                gap: 40px;
+                row-gap: 70px;
+                margin-top: 50px;
+                @media screen and (max-width:$ui-breakpoint-xl) {
+                    grid-template-columns: repeat(1, 1fr);
+                    .box__item-one:nth-child(1) {
+                        grid-row: 3;
+                        height: 210px;
+                    }
+                }
+                .box__item-one {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .item-one__name {
+                        .name__title {
+                            font-family: 'Gilroy';
+                            font-weight: 500;
+                            font-size: 40px;
+                            line-height: 44px;
+                            letter-spacing: 0%;
+                            text-transform: uppercase;
+                            color: #000; 
+                            margin-bottom: 30px;                       
+                        }
+                        .name__button {
+                            display: flex;
+                            gap: 30px;
+                        }
+                    }
+                    .item-one__disc {
+                        margin-left: auto;
+                    }
+                }
+                .image {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+                .box__item-six {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .item-six__name {
+                        .name__title {
+                            font-family: 'Gilroy';
+                            font-weight: 500;
+                            font-size: 40px;
+                            line-height: 44px;
+                            letter-spacing: 0%;
+                            text-transform: uppercase;
+                            color: #000; 
+                            margin-bottom: 30px;                       
+                        }
+                        .name__button {
+                            display: flex;
+                            gap: 30px;
+                        }
+                    }
+                    .item-six__disc {
+                        margin-left: auto;
+                    }
+                }
+            }
+            .conteiner__button {
+                display: flex;
+                justify-content: center;
+                margin-top: 70px ;
+            }
+        } 
+    }
+}

@@ -1,0 +1,59 @@
+@use './variables' as *;
+@use './fonts.scss' as *;
+main{
+    .section__one {
+        background-color: #F5F3EA;
+        margin: 0 auto;
+        width: 100%; 
+        .one__conteiner {
+            margin: 0 auto;
+            padding: 150px 30px 0 30px;
+            @media screen and (max-width:$ui-breakpoint-md) {
+                padding: 110px 20px 0 20px;     
+            }
+            .conteiner__title {
+                font-family: 'Gilroy';
+                font-size: 150px;
+                line-height: 1.2;
+                letter-spacing: 0%;
+                font-weight:400;
+                text-align: center;
+                color: #252525;
+                span {
+                    font-family: 'Gilroy';
+                    font-weight: 300;
+                    letter-spacing: 0%;
+                    text-align: center;                      
+                }
+                @media screen and (max-width:$ui-breakpoint-xl) {
+                    font-size: 120px;
+               }
+               @media screen and (max-width:$ui-breakpoint-md) {
+                    font-size: 57px;
+               }
+            }
+            .conteiner__link {
+                display: block;
+                text-align: center;
+                margin: 30px auto 40px;
+                width: 44px;
+                height: 40px;
+                @media screen and (max-width:$ui-breakpoint-md) {
+                    margin: 30px auto 20px; 
+               }
+            }
+        }
+        .conteiner__hero-images {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            padding-bottom: 93px;
+            @media screen and (max-width:$ui-breakpoint-xl) {
+                padding-bottom: 30px;
+           }
+           @media screen and (max-width:$ui-breakpoint-md) {
+                padding-bottom: 30px;
+           }
+        }
+    }
+}

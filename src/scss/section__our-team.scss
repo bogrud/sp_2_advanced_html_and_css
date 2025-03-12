@@ -1,3 +1,151 @@
 //=======================================
 //Rodion
 //=======================================
+@use './variables' as *;
+@use './fonts.scss' as *;
+main {
+    .section__four {
+        background-color: #F5F3EA;
+        padding: 50px 30px;
+        @media screen and (max-width:$ui-breakpoint-xl) {
+            padding: 30px 30px 50px 30px;
+        }
+        @media screen and (max-width:$ui-breakpoint-md) {
+            padding: 30px 20px 50px 20px;
+        }
+        .four__title {
+            font-family: 'Gilroy';
+            font-weight: 300;
+            font-size: 212px;
+            line-height: 1.2;
+            text-transform: uppercase;
+            color: #252525;
+            text-align: center;
+            @media screen and (max-width:$ui-breakpoint-xl) {
+                font-size: 130px;
+            }
+            @media screen and (max-width:$ui-breakpoint-md) {
+                font-size: 70px;
+            }  
+        }
+        .four__conteiner {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            row-gap: 30px;
+            @media screen and (max-width:$ui-breakpoint-xl) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @media screen and (max-width:$ui-breakpoint-md) {
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .conteiner__cart {
+                padding: 30px 0;
+                .cart__name-work {
+                    display: flex;
+                    flex-direction: column;
+                    @media screen and (max-width:$ui-breakpoint-md) {
+                        text-align: center;
+                    }
+                    .name-work__name {
+                        text-decoration: none;
+                        font-family: 'Gilroy';
+                        font-weight: 800;
+                        font-size: 30px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                        text-transform: uppercase;
+                        color: #333333;
+                    }
+                    .name-work__work {
+                        text-decoration: none;
+                        font-family: 'Gilroy';
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                        color: #333333;
+                        margin: 5px 0 15px;
+                    }
+                }
+                .cart__image {
+                    img {
+                        width: 100%;
+                        height: 506px;
+                        object-fit: cover;
+                        filter: grayscale(100%);
+                    }
+                }
+                .cart__mes {
+                    display: flex;
+                    gap: 10px;
+                    margin-top: 15px;
+                    justify-content: end;
+                    @media screen and (max-width:$ui-breakpoint-md) {
+                        justify-content: center;
+                    }
+                }
+            }
+            .cart-job {
+                grid-column: span 2;
+                align-content: center;
+                @media screen and (max-width:$ui-breakpoint-md) {
+                    grid-column: span 1;
+                }
+                .cart-job__text-team {
+                    font-family: 'Gilroy';
+                    font-weight: 400;
+                    font-size: 30px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    text-transform: uppercase;
+                    color: #333333;
+                    margin-bottom: 15px;
+                    @media screen and (max-width:$ui-breakpoint-md) {
+                        text-align: center;
+                    }                     
+                }
+                .cart-job__text {
+                    font-family: 'Gilroy';
+                    font-weight: 500;
+                    font-size: 64px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    text-transform: uppercase;
+                    color: #333333;
+                    margin-bottom: 15px;
+                    @media screen and (max-width:$ui-breakpoint-md) {
+                        text-align: center;
+                        font-size: 50px;
+                    } 
+                }
+                .cart-job__button {
+                    box-sizing: border-box;
+                    color: #FFFFFF;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 170px;
+                    height: 54px;
+                    text-decoration: none;
+                    font-family: 'Gilroy';
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    text-transform: capitalize;
+                    background-color: #252525;
+                    border: none;  
+                    border-radius: 50px;
+                    cursor: pointer;
+                    @media screen and (max-width:$ui-breakpoint-md) {
+                        width: 100%;
+                    } 
+                    img {
+                        margin-left: 10px;
+                    }                
+                }
+            }
+        }
+    }
+}
