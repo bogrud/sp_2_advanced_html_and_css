@@ -1,8 +1,6 @@
 //=======================================
 //Bohdan Rudenko
 //=======================================
-
-@forward './fonts.scss';
 @forward './base.scss';
 @use "./_variables" as *;
 
@@ -24,6 +22,7 @@
         grid-template-columns: repeat(3, 1fr);
 
         .my-clients__card {
+            
             padding: 1.875rem 1.875rem 3.7156rem 1.875rem;
 
             .my-clients__icon {

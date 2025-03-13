@@ -1,5 +1,6 @@
 @use "./_variables" as *;
 
+
 * {
     background-color: $ui-color-white;
     font-family: 'Gilroy', sans-serif;
@@ -25,4 +26,15 @@
     @media screen and (max-width:$ui-breakpoint-sm) {
         max-width: 100%;
     }
+}
+
+.black__btn {
+    width: fit-content;
+    padding: 1rem 1.875rem;
+    background-color: #252525;
+    cursor: pointer;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 3.125rem;
+    text-transform: capitalize;
 }
