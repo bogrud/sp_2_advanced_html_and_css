@@ -1,0 +1,102 @@
+@use './variables' as *;
+@use './fonts.scss' as *;
+main {
+    .section__two {
+        width: 100%;
+        .two__conteiner-top {
+            background-color: #F5F3EA;
+            padding-bottom: 93px;
+            margin: 0 auto;
+            @media screen and (max-width:$ui-breakpoint-xl) {
+                padding-bottom: 40px;
+           }
+            @media screen and (max-width:$ui-breakpoint-md) {
+                padding-bottom: 40px;
+           }  
+            .conteiner-top__contact{
+                display: flex;
+                align-items: center;
+                box-sizing: border-box;
+                @media screen and (max-width:$ui-breakpoint-xl) {
+                    flex-direction: column;
+               }
+                @media screen and (max-width:$ui-breakpoint-md) {
+                    flex-direction: column;
+               } 
+                .contact__content {
+                    font-family: 'Gilroy';
+                    font-weight: 300;
+                    font-size: 52px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    width: 75%;
+                    
+                    span {
+                        font-weight: 800;                            
+                    }
+                    @media screen and (max-width:$ui-breakpoint-xl) {
+                        width: 100%;
+                        text-align: center;
+                    }
+                    @media screen and (max-width:$ui-breakpoint-md) {
+                        width: 100%;
+                        text-align: center;
+                    } 
+                }
+                .contact__about {
+                    height: 156px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    width: 25vw;
+                    background-color: #252525;
+                    @media screen and (max-width:$ui-breakpoint-xl) {
+                        width: 100vw;
+                    }
+                    @media screen and (max-width:$ui-breakpoint-md) {
+                        width: 100vw;
+                    } 
+                    .about__text {
+                        font-family: 'Gilroy';
+                        font-weight: 400;
+                        font-size: 28px;
+                        line-height: 28px;
+                        letter-spacing: 0%;
+                        text-align: right;
+                        text-transform: uppercase;
+                        padding-right: 30px;
+                        color: #FFFFFF;                        
+                    }
+                    .about__link {
+                        display: flex;
+                        justify-content: flex-end;
+                        gap: 20px;
+                        padding-right: 30px;
+                    }
+                }
+            }          
+        }
+        .two__conteiner-bottom {
+            background-color: #F5F3EA;
+            padding: 70px 30px;
+            margin: 0 auto;
+            border-top: 1px solid #252525;
+            border-bottom: 1px solid #252525;
+            @media screen and (max-width:$ui-breakpoint-xl) {
+                padding: 30px 20px;
+                border: none;
+            }
+            @media screen and (max-width:$ui-breakpoint-md) {
+                padding: 30px 20px;
+                border: none;
+            } 
+            .conteiner-bottom__logo {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                gap: 40px;
+            }
+        }
+    }
+}
