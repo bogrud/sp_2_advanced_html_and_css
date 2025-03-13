@@ -1,5 +1,40 @@
 @use "./_variables" as *;
 
-/** {
-    outline: 1px solid red;
-}*/
+* {
+    background-color: $ui-color-white;
+    font-family: 'Gilroy', sans-serif;
+}
+
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 4.375rem;
+
+    @media screen and (max-width:$ui-breakpoint-xl) {
+        max-width: 992px;
+    }
+
+    @media screen and (max-width:$ui-breakpoint-lg) {
+        max-width:768px;
+    }
+
+    @media screen and (max-width:$ui-breakpoint-md) {
+        max-width: 576px;
+    }
+
+    @media screen and (max-width:$ui-breakpoint-sm) {
+        max-width: 100%;
+    }
+}
+
+.black__btn {
+    width: fit-content;
+    padding: 1rem 1.875rem;
+    background-color: #252525;
+    cursor: pointer;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 3.125rem;
+    text-transform: capitalize;
+}
+
