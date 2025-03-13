@@ -2,20 +2,4 @@
 //Bohdan Rudenko
 //=======================================
 
-@forward './fonts.scss';
-@forward './base.scss';
-@use "./_variables" as *;
-
-.section__my-clients {
-    padding: 50px 0 130px;
-
-    .section__my-clients-title {
-        font-family: 'Gilroy', sans-serif;
-        text-transform: uppercase;
-        font-weight: 300;
-        font-size: 212px;
-        color: $ui-color-black;
-        text-align: center;
-    }
-}
 
